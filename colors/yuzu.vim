@@ -2,6 +2,8 @@
 " Author:     yami-beta
 " License:    The MIT License (MIT)
 
+scriptencoding utf-8
+
 let g:colors_name = 'yuzu'
 set background=dark
 highlight clear
@@ -11,14 +13,12 @@ endif
 
 let s:black       = {'cterm': '234', 'gui': '#1c1f1c'}
 let s:white       = {'cterm': '251', 'gui': '#c6c6c6'}
-let s:red         = {'cterm': '124', 'gui': '#ab3a2b'}
+let s:red         = {'cterm': '124', 'gui': '#d81159'}
 let s:blue        = {'cterm': '125', 'gui': '#006ba6'}
-let s:yellow      = {'cterm': '25',  'gui': '#d9a62e'}
+let s:yellow      = {'cterm': '25',  'gui': '#d9a62e'} " 櫨染
 let s:green       = {'cterm': '70',  'gui': '#5cab2b'}
-let s:orange      = {'cterm': '136', 'gui': '#aa782a'}
-
-let s:light_blue  = {'cterm': '37',  'gui': '#00a3af'}
-let s:cyan        = {'cterm': '36',  'gui': '#2bab7a'}
+let s:magenta     = {'cterm': '136', 'gui': '#e7609e'} " 牡丹
+let s:cyan        = {'cterm': '37',  'gui': '#00a3af'} " 浅葱
 let s:gray        = {'cterm': '243', 'gui': '#767676'}
 let s:dark_gray   = {'cterm': '238', 'gui': '#444444'}
 let s:light_black = {'cterm': '236', 'gui': '#303030'}
@@ -43,7 +43,7 @@ endfunction
 
 call s:highlight('Normal', s:white, s:black)
 call s:highlight('Comment', s:gray, '')
-call s:highlight('Constant', s:light_blue, '')
+call s:highlight('Constant', s:cyan, '')
 hi! link String Constant
 hi! link Number Constant
 hi! link Boolean Constant
@@ -83,7 +83,7 @@ hi! link SpecialComment Delimiter
 hi! link Debug Delimiter
 
 call s:highlight('Visual', '', s:dark_gray)
-call s:highlight('Search', s:black, s:orange)
+call s:highlight('Search', s:black, s:magenta)
 hi! link IncSearch Search
 call s:highlight('Underlined', s:yellow, '', 'cterm=underline gui=underline')
 call s:highlight('MatchParen', s:white, s:dark_gray, ' term=reverse')
@@ -114,7 +114,7 @@ call s:highlight('VertSplit', s:dark_gray, s:dark_gray, 'cterm=NONE gui=NONE')
 
 call s:highlight('Todo', s:white, s:blue)
 call s:highlight('DiffAdd', s:green, 'NONE')
-call s:highlight('DiffChange', s:orange, 'NONE')
+call s:highlight('DiffChange', s:magenta, 'NONE')
 call s:highlight('DiffDelete', s:blue, 'NONE')
 call s:highlight('DiffText', s:yellow, 'NONE')
 " hi! diffAdded
