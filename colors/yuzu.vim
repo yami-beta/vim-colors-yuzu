@@ -56,7 +56,7 @@ call s:highlight('Identifier', s:yellow, '')
 hi! link Function Identifier
 hi! link Title Identifier
 
-call s:highlight('Statement', s:blue, '')
+call s:highlight('Statement', s:blue, '', 'gui=NONE')
 hi! link Conditional Statement
 hi! link Repeat Statement
 hi! link Label Statement
