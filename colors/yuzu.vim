@@ -11,17 +11,16 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let s:black       = {'cterm': '234', 'gui': '#1c1f1c'}
-let s:white       = {'cterm': '251', 'gui': '#c6c6c6'}
-let s:red         = {'cterm': '124', 'gui': '#d81159'}
-let s:blue        = {'cterm': '125', 'gui': '#006ba6'}
+let s:black       = {'cterm': '234', 'gui': '#2e2930'} " 紫黒
+let s:white       = {'cterm': '251', 'gui': '#c0c6c9'} " 灰青
+let s:red         = {'cterm': '124', 'gui': '#d7003a'} " 紅
+let s:blue        = {'cterm': '125', 'gui': '#007bbb'} " 紺碧
 let s:yellow      = {'cterm': '25',  'gui': '#d9a62e'} " 櫨染
-let s:green       = {'cterm': '70',  'gui': '#5cab2b'}
+let s:green       = {'cterm': '70',  'gui': '#38b48b'} " 翡翠色
 let s:magenta     = {'cterm': '136', 'gui': '#e7609e'} " 牡丹
-let s:cyan        = {'cterm': '37',  'gui': '#00a3af'} " 浅葱
-let s:gray        = {'cterm': '243', 'gui': '#767676'}
-let s:dark_gray   = {'cterm': '238', 'gui': '#444444'}
-let s:light_black = {'cterm': '236', 'gui': '#303030'}
+let s:cyan        = {'cterm': '37',  'gui': '#00a3af'} " 浅葱色
+let s:gray        = {'cterm': '243', 'gui': '#7b7c7d'} " 鉛色
+let s:dark_gray   = {'cterm': '238', 'gui': '#474a4d'} " 藍墨茶
 
 function! s:highlight(group, fg, bg, ...)
   let opts = get(a:, 1, '')
