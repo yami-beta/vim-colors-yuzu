@@ -13,7 +13,7 @@ endif
 
 let s:black     = [ '#2e2930', '234' ] " 紫黒
 let s:white     = [ '#c0c6c9', '251' ] " 灰青
-let s:red       = [ '#d7003a', '124' ] " 紅
+let s:red       = [ '#a22041', '124' ] " 真紅
 let s:blue      = [ '#007bbb', '125' ] " 紺碧
 let s:yellow    = [ '#d9a62e', '25' ]  " 櫨染
 let s:green     = [ '#38b48b', '70' ]  " 翡翠色
