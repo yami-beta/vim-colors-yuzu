@@ -85,7 +85,7 @@ call s:highlight('Visual', '', s:dark_gray)
 call s:highlight('Search', s:white, s:magenta)
 hi! link IncSearch Search
 call s:highlight('Underlined', s:yellow, '', 'cterm=underline gui=underline')
-call s:highlight('MatchParen', s:white, s:dark_gray, ' term=reverse')
+call s:highlight('MatchParen', s:white, s:magenta)
 
 hi! link LineNr Comment
 call s:highlight('CursorLine', '', s:dark_gray, 'cterm=NONE gui=NONE')
