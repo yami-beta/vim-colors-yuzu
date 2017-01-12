@@ -97,7 +97,7 @@ hi! link NonText SpecialKey
 call s:highlight('Cursor', s:black, s:yellow)
 call s:highlight('Directory', s:yellow, '')
 call s:highlight('Pmenu', s:white, s:dark_gray)
-call s:highlight('PmenuSel', s:white, s:yellow)
+call s:highlight('PmenuSel', s:black, s:yellow)
 call s:highlight('PmenuSbar', s:white, s:dark_gray)
 call s:highlight('PmenuThumb', s:white, s:gray)
 
