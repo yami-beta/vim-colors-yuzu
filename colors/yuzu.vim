@@ -89,8 +89,8 @@ call s:highlight('Underlined', s:yellow, '', 'cterm=underline gui=underline')
 call s:highlight('MatchParen', s:white, s:dark_gray, ' term=reverse')
 
 hi! link LineNr Comment
-call s:highlight('CursorLine', '', s:light_black, 'cterm=NONE gui=NONE')
-call s:highlight('CursorLineNr', s:yellow, s:light_black)
+call s:highlight('CursorLine', '', s:dark_gray, 'cterm=NONE gui=NONE')
+call s:highlight('CursorLineNr', s:yellow, s:dark_gray)
 call s:highlight('SpecialKey', s:dark_gray, '', 'cterm=NONE gui=NONE')
 
 hi! link NonText SpecialKey
