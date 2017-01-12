@@ -94,7 +94,7 @@ call s:highlight('CursorLineNr', s:yellow, s:dark_gray)
 call s:highlight('SpecialKey', s:dark_gray, '', 'cterm=NONE gui=NONE')
 
 hi! link NonText SpecialKey
-call s:highlight('Cursor', s:white, s:yellow)
+call s:highlight('Cursor', s:black, s:yellow)
 call s:highlight('Directory', s:yellow, '')
 call s:highlight('Pmenu', s:white, s:dark_gray)
 call s:highlight('PmenuSel', s:white, s:yellow)
