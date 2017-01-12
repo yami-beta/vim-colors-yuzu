@@ -11,28 +11,28 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let s:black       = {'cterm': '234', 'gui': '#2e2930'} " 紫黒
-let s:white       = {'cterm': '251', 'gui': '#c0c6c9'} " 灰青
-let s:red         = {'cterm': '124', 'gui': '#d7003a'} " 紅
-let s:blue        = {'cterm': '125', 'gui': '#007bbb'} " 紺碧
-let s:yellow      = {'cterm': '25',  'gui': '#d9a62e'} " 櫨染
-let s:green       = {'cterm': '70',  'gui': '#38b48b'} " 翡翠色
-let s:magenta     = {'cterm': '136', 'gui': '#e7609e'} " 牡丹
-let s:cyan        = {'cterm': '37',  'gui': '#00a3af'} " 浅葱色
-let s:gray        = {'cterm': '243', 'gui': '#7b7c7d'} " 鉛色
-let s:dark_gray   = {'cterm': '238', 'gui': '#474a4d'} " 藍墨茶
+let s:black     = [ '#2e2930', '234' ] " 紫黒
+let s:white     = [ '#c0c6c9', '251' ] " 灰青
+let s:red       = [ '#d7003a', '124' ] " 紅
+let s:blue      = [ '#007bbb', '125' ] " 紺碧
+let s:yellow    = [ '#d9a62e', '25' ]  " 櫨染
+let s:green     = [ '#38b48b', '70' ]  " 翡翠色
+let s:magenta   = [ '#e7609e', '136' ] " 牡丹
+let s:cyan      = [ '#00a3af', '37' ]  " 浅葱色
+let s:gray      = [ '#7b7c7d', '243' ] " 鉛色
+let s:dark_gray = [ '#393f4c', '238' ] " 藍鉄
 
 function! s:highlight(group, fg, bg, ...)
   let opts = get(a:, 1, '')
   let highlight_ary = []
 
-  if type(a:fg) == v:t_dict
-    let highlight_ary += ['ctermfg='.a:fg.cterm] + ['guifg='.a:fg.gui]
+  if type(a:fg) == v:t_list
+    let highlight_ary += ['ctermfg='.a:fg[1]] + ['guifg='.a:fg[0]]
   elseif a:fg ==# 'NONE'
     let highlight_ary += ['ctermfg=NONE'] + ['guifg=NONE']
   endif
-  if type(a:bg) == v:t_dict
-    let highlight_ary += ['ctermbg='.a:bg.cterm] + ['guibg='.a:bg.gui]
+  if type(a:bg) == v:t_list
+    let highlight_ary += ['ctermbg='.a:bg[1]] + ['guibg='.a:bg[0]]
   elseif a:bg ==# 'NONE'
     let highlight_ary += ['ctermbg=NONE'] + ['guibg=NONE']
   endif
@@ -128,8 +128,8 @@ call s:highlight('ModeMsg', s:gray, '', 'cterm=bold gui=bold')
 " hi! Operator
 call s:highlight('SignColumn', s:yellow, 'NONE')
 " hi! Special
-call s:highlight('SpellBad', '', '', 'gui=undercurl guisp='.s:blue.gui)
-call s:highlight('SpellCap', '', '', 'gui=undercurl guisp='.s:green.gui)
-call s:highlight('SpellLocal', '', '', 'gui=undercurl guisp='.s:yellow.gui)
-call s:highlight('SpellRare', '', '', 'gui=undercurl guisp='.s:red.gui)
+call s:highlight('SpellBad', '', '', 'gui=undercurl guisp='.s:blue[0])
+call s:highlight('SpellCap', '', '', 'gui=undercurl guisp='.s:green[0])
+call s:highlight('SpellLocal', '', '', 'gui=undercurl guisp='.s:yellow[0])
+call s:highlight('SpellRare', '', '', 'gui=undercurl guisp='.s:red[0])
 " hi! Structure
