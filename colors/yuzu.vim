@@ -114,9 +114,9 @@ call s:highlight('VertSplit', s:dark_gray, s:dark_gray, 'cterm=NONE gui=NONE')
 
 call s:highlight('Todo', s:white, s:blue)
 call s:highlight('DiffAdd', s:green, 'NONE')
-call s:highlight('DiffChange', s:magenta, 'NONE')
-call s:highlight('DiffDelete', s:blue, 'NONE')
-call s:highlight('DiffText', s:yellow, 'NONE')
+call s:highlight('DiffChange', s:yellow, 'NONE')
+call s:highlight('DiffDelete', s:magenta, 'NONE')
+call s:highlight('DiffText', s:blue, 'NONE')
 " hi! diffAdded
 " hi! diffRemoved
 call s:highlight('Error', s:white, s:red, 'cterm=bold gui=bold')
