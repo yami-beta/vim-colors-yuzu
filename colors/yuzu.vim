@@ -21,6 +21,7 @@ let s:magenta   = [ '#c85179', '136' ] " 中紅
 let s:cyan      = [ '#00a3af', '37' ]  " 浅葱色
 let s:gray      = [ '#7b7c7d', '243' ] " 鉛色
 let s:dark_gray = [ '#393f4c', '238' ] " 藍鉄
+let s:dark_blue = [ '#165e83', '125' ] " 藍色
 
 function! s:highlight(group, fg, bg, ...)
   let opts = get(a:, 1, '')
@@ -81,7 +82,7 @@ call s:highlight('Delimiter', s:yellow, '')
 hi! link SpecialComment Delimiter
 hi! link Debug Delimiter
 
-call s:highlight('Visual', '', s:dark_gray)
+call s:highlight('Visual', '', s:dark_blue)
 call s:highlight('Search', s:white, s:magenta)
 hi! link IncSearch Search
 call s:highlight('Underlined', s:yellow, '', 'cterm=underline gui=underline')
