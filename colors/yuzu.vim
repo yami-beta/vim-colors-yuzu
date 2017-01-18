@@ -11,17 +11,17 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let s:black     = [ '#2e2930', '234' ] " 紫黒
+let s:black     = [ '#2e2930', '235' ] " 紫黒
 let s:white     = [ '#c0c6c9', '251' ] " 灰青
-let s:red       = [ '#a22041', '124' ] " 真紅
-let s:blue      = [ '#007bbb', '125' ] " 紺碧
-let s:yellow    = [ '#d9a62e', '25' ]  " 櫨染
-let s:green     = [ '#38b48b', '70' ]  " 翡翠色
-let s:magenta   = [ '#c85179', '136' ] " 中紅
+let s:red       = [ '#a22041', '125' ] " 真紅
+let s:blue      = [ '#007bbb', '32' ]  " 紺碧
+let s:yellow    = [ '#d9a62e', '178' ] " 櫨染
+let s:green     = [ '#38b48b', '72' ]  " 翡翠色
+let s:magenta   = [ '#c85179', '168' ] " 中紅
 let s:cyan      = [ '#00a3af', '37' ]  " 浅葱色
-let s:gray      = [ '#7b7c7d', '243' ] " 鉛色
+let s:gray      = [ '#7b7c7d', '244' ] " 鉛色
 let s:dark_gray = [ '#393f4c', '238' ] " 藍鉄
-let s:dark_blue = [ '#165e83', '125' ] " 藍色
+let s:dark_blue = [ '#165e83', '24' ]  " 藍色
 
 function! s:highlight(group, fg, bg, ...)
   let opts = get(a:, 1, '')
