@@ -117,8 +117,9 @@ call s:highlight('DiffAdd', s:green, 'NONE')
 call s:highlight('DiffChange', s:yellow, 'NONE')
 call s:highlight('DiffDelete', s:red, 'NONE')
 call s:highlight('DiffText', s:blue, 'NONE')
-" hi! diffAdded
-" hi! diffRemoved
+hi! link diffAdded DiffAdd
+hi! link diffRemoved DiffDelete
+
 call s:highlight('Error', s:white, s:red, 'cterm=bold gui=bold')
 call s:highlight('ErrorMsg', s:red, 'NONE')
 call s:highlight('WarningMsg', s:red, '')
