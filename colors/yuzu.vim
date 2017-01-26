@@ -13,11 +13,11 @@ endif
 
 let s:black     = [ '#2e2930', '235' ] " 紫黒
 let s:white     = [ '#c0c6c9', '251' ] " 灰青
-let s:red       = [ '#d9333f', '161' ] " 紅赤
+let s:red       = [ '#c85179', '168' ] " 中紅
 let s:blue      = [ '#007bbb', '32' ]  " 紺碧
 let s:yellow    = [ '#d9a62e', '178' ] " 櫨染
 let s:green     = [ '#38b48b', '72' ]  " 翡翠色
-let s:magenta   = [ '#c85179', '168' ] " 中紅
+let s:magenta   = [ '#aa4c8f', '132' ] " 梅紫
 let s:cyan      = [ '#00a3af', '37' ]  " 浅葱色
 let s:gray      = [ '#7b7c7d', '244' ] " 鉛色
 let s:dark_gray = [ '#393f4c', '238' ] " 藍鉄
@@ -83,10 +83,10 @@ hi! link SpecialComment Delimiter
 hi! link Debug Delimiter
 
 call s:highlight('Visual', '', s:dark_blue)
-call s:highlight('Search', s:white, s:magenta)
+call s:highlight('Search', s:white, s:red)
 hi! link IncSearch Search
 call s:highlight('Underlined', s:yellow, '', 'cterm=underline gui=underline')
-call s:highlight('MatchParen', s:white, s:magenta)
+call s:highlight('MatchParen', s:white, s:red)
 
 hi! link LineNr Comment
 call s:highlight('CursorLine', '', s:dark_gray, 'cterm=NONE gui=NONE')
@@ -115,7 +115,7 @@ call s:highlight('VertSplit', s:dark_gray, s:dark_gray, 'cterm=NONE gui=NONE')
 call s:highlight('Todo', s:white, s:blue)
 call s:highlight('DiffAdd', s:green, 'NONE')
 call s:highlight('DiffChange', s:yellow, 'NONE')
-call s:highlight('DiffDelete', s:magenta, 'NONE')
+call s:highlight('DiffDelete', s:red, 'NONE')
 call s:highlight('DiffText', s:blue, 'NONE')
 " hi! diffAdded
 " hi! diffRemoved
