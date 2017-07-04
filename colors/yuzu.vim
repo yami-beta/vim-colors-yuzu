@@ -90,6 +90,7 @@ call s:highlight('MatchParen', s:white, s:red)
 
 hi! link LineNr Comment
 call s:highlight('CursorLine', '', s:dark_gray, 'cterm=NONE gui=NONE')
+call s:highlight('CursorColumn', '', s:dark_gray, 'cterm=NONE gui=NONE')
 call s:highlight('CursorLineNr', s:yellow, s:dark_gray)
 call s:highlight('SpecialKey', s:dark_gray, '', 'cterm=NONE gui=NONE')
 
