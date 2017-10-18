@@ -56,21 +56,22 @@ call s:highlight('Identifier', s:yellow, '')
 hi! link Function Identifier
 hi! link Title Identifier
 
-call s:highlight('Statement', s:blue, '', 'gui=NONE')
+call s:highlight('Statement', s:red, '', 'gui=NONE')
 hi! link Conditional Statement
 hi! link Repeat Statement
-hi! link Label Statement
 hi! link Operator Statement
 hi! link Keyword Statement
 hi! link Exception Statement
 
-call s:highlight('PreProc', s:blue, '')
+call s:highlight('Label', s:green, '')
+
+call s:highlight('PreProc', s:red, '')
 hi! link Include PreProc
 hi! link Define PreProc
 hi! link Macro PreProc
 hi! link PreCondit PreProc
 
-call s:highlight('Type', s:yellow, '', 'gui=NONE')
+call s:highlight('Type', s:blue, '', 'gui=NONE')
 hi! link StorageClass Type
 hi! link Structure Type
 hi! link Typedef Type
@@ -136,3 +137,31 @@ call s:highlight('SpellCap', '', '', 'gui=undercurl guisp='.s:green[0])
 call s:highlight('SpellLocal', '', '', 'gui=undercurl guisp='.s:yellow[0])
 call s:highlight('SpellRare', '', '', 'gui=undercurl guisp='.s:red[0])
 " hi! Structure
+
+" Ruby
+call s:highlight('rubyAttribute', s:yellow, '')
+call s:highlight('rubyLocalVariableOrMethod', s:green, '')
+call s:highlight('rubyGlobalVariable', s:green, '')
+call s:highlight('rubyInstanceVariable', s:green, '')
+call s:highlight('rubyKeyword', s:red, '')
+call s:highlight('rubyKeywordAdMethod', s:red, '', 'cterm=bold gui=bold')
+call s:highlight('rubyClassDeclaration', s:red, '', 'cterm=bold gui=bold')
+call s:highlight('rubyClass', s:red, '', 'cterm=bold gui=bold')
+call s:highlight('rubyNumber', s:red, '')
+
+" JavaScript
+call s:highlight('jsBuiltins', s:yellow, '')
+call s:highlight('jsFunction', s:red, '', 'cterm=bold gui=bold')
+call s:highlight('jsGlobalObjects', s:blue, '')
+call s:highlight('jsAssignmentExps', s:green, '')
+
+" HTML
+call s:highlight('htmlLink', s:green, '', 'cterm=underline gui=underline')
+call s:highlight('htmlStatement', s:red, '')
+call s:highlight('htmlSpecialTagName', s:red, '')
+
+" Go
+call s:highlight('goBuiltins', s:yellow, '')
+call s:highlight('goMethodCall', s:yellow, '')
+call s:highlight('goVarAssign', s:green, '')
+call s:highlight('goVarDefs', s:green, '')
