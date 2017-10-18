@@ -165,3 +165,8 @@ call s:highlight('goBuiltins', s:yellow, '')
 call s:highlight('goMethodCall', s:yellow, '')
 call s:highlight('goVarAssign', s:green, '')
 call s:highlight('goVarDefs', s:green, '')
+
+" PHP
+call s:highlight('phpStructure', s:red, '')
+hi! link phpVarSelector Normal
+hi! link phpIdentifier Normal
