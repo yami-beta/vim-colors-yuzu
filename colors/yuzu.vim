@@ -16,7 +16,7 @@ let s:white     = [ '#c0c6c9', '251' ] " 灰青
 let s:red       = [ '#c85179', '168' ] " 中紅
 let s:blue      = [ '#007bbb', '32' ]  " 紺碧
 let s:yellow    = [ '#d9a62e', '178' ] " 櫨染
-let s:green     = [ '#38b48b', '72' ]  " 翡翠色
+let s:green     = [ '#00a381', '36' ]  " 花緑青
 let s:magenta   = [ '#aa4c8f', '132' ] " 梅紫
 let s:cyan      = [ '#00a3af', '37' ]  " 浅葱色
 let s:gray      = [ '#7b7c7d', '244' ] " 鉛色
@@ -56,7 +56,7 @@ call s:highlight('Identifier', s:yellow, '')
 hi! link Function Identifier
 hi! link Title Identifier
 
-call s:highlight('Statement', s:red, '', 'gui=NONE')
+call s:highlight('Statement', s:green, '', 'gui=NONE')
 hi! link Conditional Statement
 hi! link Repeat Statement
 hi! link Operator Statement
@@ -65,7 +65,7 @@ hi! link Exception Statement
 
 call s:highlight('Label', s:green, '')
 
-call s:highlight('PreProc', s:red, '')
+call s:highlight('PreProc', s:green, '')
 hi! link Include PreProc
 hi! link Define PreProc
 hi! link Macro PreProc
@@ -143,22 +143,22 @@ call s:highlight('rubyAttribute', s:yellow, '')
 call s:highlight('rubyLocalVariableOrMethod', s:green, '')
 call s:highlight('rubyGlobalVariable', s:green, '')
 call s:highlight('rubyInstanceVariable', s:green, '')
-call s:highlight('rubyKeyword', s:red, '')
-call s:highlight('rubyKeywordAdMethod', s:red, '', 'cterm=bold gui=bold')
-call s:highlight('rubyClassDeclaration', s:red, '', 'cterm=bold gui=bold')
-call s:highlight('rubyClass', s:red, '', 'cterm=bold gui=bold')
-call s:highlight('rubyNumber', s:red, '')
+call s:highlight('rubyKeyword', s:green, '')
+call s:highlight('rubyKeywordAdMethod', s:green, '', 'cterm=bold gui=bold')
+call s:highlight('rubyClassDeclaration', s:green, '', 'cterm=bold gui=bold')
+call s:highlight('rubyClass', s:green, '', 'cterm=bold gui=bold')
+call s:highlight('rubyNumber', s:green, '')
 
 " JavaScript
 call s:highlight('jsBuiltins', s:yellow, '')
-call s:highlight('jsFunction', s:red, '', 'cterm=bold gui=bold')
+call s:highlight('jsFunction', s:green, '', 'cterm=bold gui=bold')
 call s:highlight('jsGlobalObjects', s:blue, '')
 call s:highlight('jsAssignmentExps', s:green, '')
 
 " HTML
 call s:highlight('htmlLink', s:green, '', 'cterm=underline gui=underline')
-call s:highlight('htmlStatement', s:red, '')
-call s:highlight('htmlSpecialTagName', s:red, '')
+call s:highlight('htmlStatement', s:green, '')
+call s:highlight('htmlSpecialTagName', s:green, '')
 
 " Go
 call s:highlight('goBuiltins', s:yellow, '')
@@ -167,6 +167,6 @@ call s:highlight('goVarAssign', s:green, '')
 call s:highlight('goVarDefs', s:green, '')
 
 " PHP
-call s:highlight('phpStructure', s:red, '')
+call s:highlight('phpStructure', s:green, '')
 hi! link phpVarSelector Normal
 hi! link phpIdentifier Normal
