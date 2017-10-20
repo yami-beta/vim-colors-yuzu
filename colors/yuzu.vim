@@ -43,18 +43,17 @@ endfunction
 
 call s:highlight('Normal', s:white, s:black)
 call s:highlight('Comment', s:gray, '')
-call s:highlight('Constant', s:cyan, '')
-hi! link String Constant
-hi! link Number Constant
-hi! link Boolean Constant
-hi! link Float Constant
-hi! link Character Constant
-hi! link Delimiter Constant
+call s:highlight('Constant', s:yellow, '')
+call s:highlight('String', s:cyan, '')
+hi! link Number String
+hi! link Boolean String
+hi! link Float String
+hi! link Character String
+hi! link Delimiter String
 
-
-call s:highlight('Identifier', s:yellow, '')
-hi! link Function Identifier
-hi! link Title Identifier
+call s:highlight('Identifier', s:blue, '')
+call s:highlight('Function', s:yellow, '')
+hi! link Title Function
 
 call s:highlight('Statement', s:green, '', 'gui=NONE')
 hi! link Conditional Statement
